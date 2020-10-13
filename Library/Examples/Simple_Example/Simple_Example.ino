@@ -1,10 +1,9 @@
 /*
  * This example uses 3 sprites that take up 3952 bytes of dynamic memory
  * Make sure that your microcontroller has more than 10KB of RAM otherwise
- * this code will not work. The final version of this library will store
- * the spirtes in PROGMEM freeing up RAM.
+ * this code will not work. In tutorial 8 we will store the spirtes in PROGMEM freeing up RAM.
  * 
- * L33T_Animation V0.5 Class Example
+ * L33T_Animation Class Example
  * 
  * Copyright David Bradshaw 2020
  * 
