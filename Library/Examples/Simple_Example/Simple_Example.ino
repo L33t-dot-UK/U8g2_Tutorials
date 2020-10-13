@@ -404,8 +404,8 @@ The Animation class allows us to create new animations with ease and to draw the
 */
 //                   ICON WIDTH    ICON HEIGHT    FRAME_DELAY Ms     XINCREMENT   YINCREMENT   XSTART  XEND   YSTART   YEND       FRAMES
 L33T_Animation BIRD(icWidth,        icHeight,            200,            2,             1,        -64,    160,   15,      15,       frames);
-L33T_Animation DRAGON(icWidth_IC2, icHeight_IC2,         150,            6,             6,        -96,    128,     15,        -8,   frames);
-L33T_Animation GROUND(groundWidth, groundHeight,         150,            6,             6,         0,     0,      45,         45,   frames);
+L33T_Animation DRAGON(icWidth_IC2, icHeight_IC2,         150,            6,             6,        -96,    128,     15,    -8,       frames);
+L33T_Animation GROUND(groundWidth, groundHeight,         150,            6,             6,         0,     0,      45,      45,      frames);
 
 void setup() {
     // put your setup code here, to run once:
