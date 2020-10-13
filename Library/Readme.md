@@ -9,3 +9,5 @@ This library is what we created in tutorial 6. To install the library download t
 Then navigate to "L33T.Animation.zip" select it and click "Open" 
 
 If you have any issues watch tutorial 7 where we download, install and use the library.
+
+This library will be expanded over the next couple of weeks to have more functionality, once this is done this Readme file will contain a reference to all the funcitons within the library.
