@@ -1,6 +1,6 @@
-#U8G2 ANIMATION TUTORIALS
+# U8G2 ANIMATION TUTORIALS
 
-REFERENCE: www.L33T.uk/U8G2
+REFERENCE: www.L33T.uk/U8G2\
 REFERENCE: https://www.youtube.com/watch?v=hP_Iinhm-J8&list=PLO2D4fDkIZCVG0tF_QvZqrIN6djy4-Z6i
 
 The code in thos repo are designed to support the tutorials found in the above references. The videos in this series are details below;
