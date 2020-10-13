@@ -1,7 +1,7 @@
 # ICONS TO BE USED WITH THE TUTORIALS
 
-REFERENCE: https://www.l33t.uk/U8G2 /n
-REFERENCE: https://www.youtube.com/watch?v=hP_Iinhm-J8&list=PLO2D4fDkIZCVG0tF_QvZqrIN6djy4-Z6i
+REFERENCE: https://www.l33t.uk/U8G2 \
+REFERENCE: https://www.youtube.com/watch?v=hP_Iinhm-J8&list=PLO2D4fDkIZCVG0tF_QvZqrIN6djy4-Z6i\
 
 All icons are included in this folder in XBM format. I have included png images of the running bird
 so you can follow the tutorial and GIF animations of the running bitd and dragon. I have not included
