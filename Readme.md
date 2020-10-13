@@ -3,7 +3,7 @@
 REFERENCE: www.L33T.uk/U8G2 \
 REFERENCE: https://www.youtube.com/watch?v=hP_Iinhm-J8&list=PLO2D4fDkIZCVG0tF_QvZqrIN6djy4-Z6i
 
-![Alt text](/Thumb1.png?raw=true "Title")
+![Alt text](/Thumb1.png?raw=true "U8G2 Animation Tutorial")
 
 The code in this repo is designed to support tutorials found in the above references.
 
