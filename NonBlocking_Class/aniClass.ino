@@ -199,7 +199,7 @@ int animation::getHeight()
 /*
  * THE BELOW CODE IS NEEDED BECAUSE OF THE WAY THAT ARDUINO IDE COMPILIES CODE ONCE A LIBRARY IS CREATED THIS WILL BE DONE DIFFERENTLY
  */
-//            WIDTH   HEIGHT                        FRAME_DELAY     XINCREMENT   YINCREMENT   XSTART  XEND   YSTART   YEND   FRAMES   SIZE      ICON
+//            WIDTH   HEIGHT                        FRAME_DELAY     XINCREMENT   YINCREMENT   XSTART  XEND   YSTART   YEND   FRAMES        
 animation BIRD(icWidth,       icHeight,                  200,          2,            1,        -64,   160,     15,     15,      frames);
 animation BIRD1(icWidth_IC2,       icHeight_IC2,         150,          6,            6,        -96,   128,     15,     -8,      frames_IC2);
 animation GROUND(groundWidth,       groundHeight,         150,          6,            6,        0,   0,     45,     45,      1);
