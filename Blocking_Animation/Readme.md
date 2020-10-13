@@ -6,3 +6,5 @@ REFERENCES: https://www.youtube.com/watch?v=xvia3oQRAnc&list=PLO2D4fDkIZCVG0tF_Q
 This is an intorduction on how to create animations using Arduino IDE and the U8G2 library. As it is an introduction
 I have kept it simple and created a blocking way to animate some XBM files demonstrating certain principles. We will
 later build on this by creating a non blocking class and a library in later tutorials.
+
+To view the tutorials go to the above YouTube link.
