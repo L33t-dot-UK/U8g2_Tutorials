@@ -387,9 +387,25 @@ static unsigned char ground[][552] = {
    };
 
 //Create the Animation Objects
-L33T_Animation BIRD(icWidth, icHeight, 200,       2, 1, -64, 160, 15, 15, frames);
-L33T_Animation DRAGON(icWidth_IC2, icHeight_IC2, 150, 6, 6, -96, 128, 15, -8, frames);
-L33T_Animation GROUND(groundWidth, groundHeight, 150, 6, 6, 0, 0, 45, 45, frames);
+/*
+ICON WIDTH = Width of the icon in pixels 
+ICON HEIGHT = Height of the icon in pixels
+FRAME_DELAY = How long between drawing the next frame in milliseconds
+XINCREMENT = How many pixels to increment the animation for the x axis
+YINCREMENT = How many pixels to increment the animation for the Y axis
+XSTART = X coordinate start position
+XEND = X coordinate end position
+YSTART = Y coordinate start position
+YEND = Y coordinate end position
+FRAMES = How many frame are there in the animation
+
+IF THE ANIMATION IS TO STAY STILL X AND Y START AND END POSITIONS SHOULD BE THE SAME
+The Animation class allows us to create new animations with ease and to draw these animations in a non blocking way
+*/
+//                   ICON WIDTH    ICON HEIGHT    FRAME_DELAY Ms     XINCREMENT   YINCREMENT   XSTART  XEND   YSTART   YEND       FRAMES
+L33T_Animation BIRD(icWidth,        icHeight,            200,            2,             1,        -64,    160,   15,      15,       frames);
+L33T_Animation DRAGON(icWidth_IC2, icHeight_IC2,         150,            6,             6,        -96,    128,     15,        -8,   frames);
+L33T_Animation GROUND(groundWidth, groundHeight,         150,            6,             6,         0,     0,      45,         45,   frames);
 
 void setup() {
     // put your setup code here, to run once:
@@ -403,14 +419,17 @@ void loop() {
     // put your main code here, to run repeatedly:
 
     //Check to see if the animation should be incremented
-    BIRD.chkAnimation(true);
+   //The argument here decides if the animation should be incremented on the X and Y axis
+    BIRD.chkAnimation(true); //true == move animation
     DRAGON.chkAnimation(true);
-    GROUND.chkAnimation(false);
+    GROUND.chkAnimation(false); //false == keep the animation stationary
 
     //Draw the animation to screen
     auxScreen.clearBuffer(); 
-    auxScreen.drawXBM(GROUND.getXpos(), GROUND.getYpos(), GROUND.getWidth(), GROUND.getHeight(), ground[0]); 
-    auxScreen.drawXBM(BIRD.getXpos(), BIRD.getYpos(), BIRD.getWidth(), BIRD.getHeight(), icon[BIRD.getCurrentFrame()]); 
-    auxScreen.drawXBM(DRAGON.getXpos(), DRAGON.getYpos(), DRAGON.getWidth(), DRAGON.getHeight(), icon2[DRAGON.getCurrentFrame()]); 
-    auxScreen.sendBuffer();
+   
+   //As you can see the animation class tracks the sprites location and which frame to show next
+   auxScreen.drawXBM(GROUND.getXpos(), GROUND.getYpos(), GROUND.getWidth(), GROUND.getHeight(), ground[0]); 
+   auxScreen.drawXBM(BIRD.getXpos(), BIRD.getYpos(), BIRD.getWidth(), BIRD.getHeight(), icon[BIRD.getCurrentFrame()]); 
+   auxScreen.drawXBM(DRAGON.getXpos(), DRAGON.getYpos(), DRAGON.getWidth(), DRAGON.getHeight(), icon2[DRAGON.getCurrentFrame()]); 
+   auxScreen.sendBuffer();
 }
