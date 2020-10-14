@@ -1,13 +1,20 @@
-# U8G2 PARTIAL ANIMATION LIBRARY
+# U8G2 ANIMATION TUTORIALS
 
 REFERENCE: www.L33T.uk/U8G2 \
 REFERENCE: https://www.youtube.com/watch?v=hP_Iinhm-J8&list=PLO2D4fDkIZCVG0tF_QvZqrIN6djy4-Z6i
 
-This library is what we created in tutorial 6. To install the library download this repo, open Arduino IDE; \
-    -     Select "Sketch" -> "Include Library" -> "Add .Zip Library"
-    
-Then navigate to "L33T_PL_Animation.zip" (it's in the PL_Library folder) select it and click "Open" 
+![Alt text](/Thumb1.png?raw=true "U8G2 Animation Tutorial")
 
-If you have any issues watch tutorial 7 where we download, install and use the library.
+The code in this repo is designed to support tutorials found in the above references.
 
-This library is a partial library and was used to demonstrate how to create an Arduino library, it will be expanded over the next couple of weeks to have more functionality, once this is done this you will be able to view the completed library in the Library folder of this repo.
+Videos in this Series;
+1. Introduction
+2. Connected an OLED Screen to a Arduino
+3. Creating XBM images for use in Arduino IDE (Icon Folder)
+4. Creating Animation's with U8G2 and Arduino IDE (Blocking_Animation Folder)
+5. Creating an Animation Class (NonBlocking_Class Folder)
+6. Turning the Class into a library (PL_Library Folder)
+7. Using the Library in Arduino IDE (PL_Library Folder)
+8. Tidying up the Class and Using PROGMEM
+
+This video series will show you how to create animations with the U8G2 library using Arduino IDE. We will install the library, create bitmaps for use in Arduino IDE, animate the bitmaps then create a class and library enabling us to create animation objects and have multiple animations.
