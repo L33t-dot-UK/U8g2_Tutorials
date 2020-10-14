@@ -1,9 +1,9 @@
 #include "Arduino.h"
-#include "L33T_Animation.h"
+#include "L33T_PL_Animation"
 
 
 //Constructor
-L33T_Animation::L33T_Animation(int _width, int _height, int _fDelay, int _xIncrement, int _yIncrement, int _startxPos, int _endxPos, int _startyPos, int _endyPos, int _frames)
+L33T_PL_Animation::L33T_PL_Animation(int _width, int _height, int _fDelay, int _xIncrement, int _yIncrement, int _startxPos, int _endxPos, int _startyPos, int _endyPos, int _frames)
 {
     //Assign values to class variables
     width_ = _width;
@@ -26,7 +26,7 @@ L33T_Animation::L33T_Animation(int _width, int _height, int _fDelay, int _xIncre
 }
 
 //Executes every loop iteration and decides if we need to increment the next frame
-void L33T_Animation::chkAnimation(boolean toMove)
+void L33T_PL_Animation::chkAnimation(boolean toMove)
 {  
     if (toMove)
     {
@@ -47,7 +47,7 @@ void L33T_Animation::chkAnimation(boolean toMove)
 }
 
 //Returns a value depending on if the delay value has been met
-boolean L33T_Animation::toIncrement()
+boolean L33T_PL_Animation::toIncrement()
 {
     if ((millis() - timerStart) > fDelay)
     {
@@ -61,7 +61,7 @@ boolean L33T_Animation::toIncrement()
 }
 
 //Looks at the x and y end coords and evaluates if they have been exceeded
-boolean L33T_Animation::moveAni()
+boolean L33T_PL_Animation::moveAni()
 {
      boolean returnVal = true;
    
@@ -142,24 +142,24 @@ boolean L33T_Animation::moveAni()
 }
 
 //Helper methods
-int L33T_Animation::getXpos()
+int L33T_PL_Animation::getXpos()
 {
     return currentXpos;
 }
 
-int L33T_Animation::getYpos()
+int L33T_PL_Animation::getYpos()
 {
     return currentYpos;
 }
-int L33T_Animation::getCurrentFrame()
+int L33T_PL_Animation::getCurrentFrame()
 {
     return currentFrame;
 }
-int L33T_Animation::getWidth()
+int L33T_PL_Animation::getWidth()
 {
     return width_;
 }
-int L33T_Animation::getHeight()
+int L33T_PL_Animation::getHeight()
 {
     return height_;
 }
