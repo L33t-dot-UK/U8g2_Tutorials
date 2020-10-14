@@ -1,7 +1,7 @@
-class L33T_Animation
+class L33T_PL_Animation
 {    
     public:
-        L33T_Animation(int WIDTH, int HEIGHT, int FDELAY, int XINCREMENT, int YINCREMENT, int STARTXPOS, int ENDXPOS, int STARTYPOS, int ENDYPOS,  int FRAMES);
+        L33T_PL_Animation(int WIDTH, int HEIGHT, int FDELAY, int XINCREMENT, int YINCREMENT, int STARTXPOS, int ENDXPOS, int STARTYPOS, int ENDYPOS,  int FRAMES);
         void chkAnimation(boolean toMove);
         boolean toIncrement();
         int getXpos();
