@@ -10,4 +10,4 @@ Then navigate to "L33T_PL_Animation.zip" (it's in the PL_Library folder) select 
 
 If you have any issues watch tutorial 7 where we download, install and use the library.
 
-This library is a partial library and was used to demonstrate how to create an Arduino library, it will be expanded over the next couple of weeks to have more functionality, once this is done this Readme file will contain a reference to all the funcitons within the library.
+This library is a partial library and was used to demonstrate how to create an Arduino library, it will be expanded over the next couple of weeks to have more functionality, once this is done this you will be able to view the completed library in the Library folder of this repo.
