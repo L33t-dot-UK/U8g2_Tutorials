@@ -13,7 +13,7 @@
  * 
  */
 
-#include <L33T_Animation.h> //import animation library
+#include <L33T_PL_Animation.h> //import animation library
 #include <U8g2lib.h> //Import the U8G2 library
 
 U8G2_SH1106_128X64_NONAME_F_HW_I2C auxScreen(U8G2_R0); //Create a U8G2 object for our SH1106 chipset
@@ -403,9 +403,9 @@ IF THE ANIMATION IS TO STAY STILL X AND Y START AND END POSITIONS SHOULD BE THE 
 The Animation class allows us to create new animations with ease and to draw these animations in a non blocking way
 */
 //                   ICON WIDTH    ICON HEIGHT    FRAME_DELAY Ms     XINCREMENT   YINCREMENT   XSTART  XEND   YSTART   YEND       FRAMES
-L33T_Animation BIRD(icWidth,        icHeight,            200,            2,             1,        -64,    160,   15,      15,       frames);
-L33T_Animation DRAGON(icWidth_IC2, icHeight_IC2,         150,            6,             6,        -96,    128,     15,    -8,       frames);
-L33T_Animation GROUND(groundWidth, groundHeight,         150,            6,             6,         0,     0,      45,      45,      frames);
+L33T_PL_Animation BIRD(icWidth,        icHeight,            200,            2,             1,        -64,    160,   15,      15,       frames);
+L33T_PL_Animation DRAGON(icWidth_IC2, icHeight_IC2,         150,            6,             6,        -96,    128,     15,    -8,       frames);
+L33T_PL_Animation GROUND(groundWidth, groundHeight,         150,            6,             6,         0,     0,      45,      45,      frames);
 
 void setup() {
     // put your setup code here, to run once:
