@@ -24,4 +24,43 @@ Constructor
   ENDX = End position for the x axis \
   STARTY = Start psoition for the Y axis \
   ENDY = End position for the Y axis \
-  NO_FRAMES = Number of frames in the animation \
+  NO_FRAMES = Number of frames in the animation
+
+Methods
+
+  void chkAnimation(boolean toMove)
+  
+  This method will be called each loop iteration and will allow the animation to be animated. It will increment the frame and move the animation. The argument toMove tells the methid is it should move the animation. If it's set to true the animation will move in accordance with the constructor arguments. If it's set to false the animation will not move.
+  
+  boolean to increment()
+  
+  This is used internally inside the class however you can access it. It will return false if the FRAME_DELAY has not been exceeded of true if the FRAME_DELAY has been exceeded.
+  
+int getXpos()
+
+int getYpos()
+
+void setXpos()
+
+void setYpos()
+
+int getCurrentFrame()
+
+int getWidth()
+
+int getHeight()
+
+boolean isComplete()
+
+Returns true if all of the frames in the animation has been played, otherwise false is returned
+
+boolean toReset()
+
+returns true if the ENDX and ENDY coordinates have been exceeded. Allows you to decide if the animations needs to be reset.
+
+	    void moveX(int pixels);
+	    void moveY(int pixels);
+        boolean getBarEndX();
+        boolean getBarEndY();
+        void resetAni();
+
