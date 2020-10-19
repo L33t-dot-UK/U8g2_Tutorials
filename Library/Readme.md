@@ -7,7 +7,7 @@ To install the library download this repo, open Arduino IDE;
 
 Then navigate to "L33T_Animation.zip" (it's in the Library folder) select it and click "Open"
 
-# Libraray Reference
+# Library Reference
 
 ## Constructor
 
