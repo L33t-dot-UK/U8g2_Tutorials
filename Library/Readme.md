@@ -34,7 +34,7 @@ Then navigate to "L33T_Animation.zip" (it's in the Library folder) select it and
   
   This method will be called each loop iteration and will allow the animation to be animated. It will increment the frame and move the animation. The argument toMove tells the method is it should move the animation. If it's set to true the animation will move in accordance with the constructor arguments. If it's set to false the animation will not move.
   
-  ### boolean to increment();
+  ### boolean toIncrement();
   
   This is used internally inside the class however you can access it. It will return False if the __FRAME_DELAY__ has not been exceeded or True if the __FRAME_DELAY__ has been exceeded.
   
