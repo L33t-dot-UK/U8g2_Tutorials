@@ -11,7 +11,7 @@ Then navigate to "L33T_Animation.zip" (it's in the Library folder) select it and
 
 ## Constructor
 
-  L33T_Animation Animation1(WIDTH, HEIGHT, FRAME_DELAY, XINC, YINC, STARTX, ENDX, STARTY, ENDY, NO_FRAMES);
+  ### L33T_Animation Animation1(WIDTH, HEIGHT, FRAME_DELAY, XINC, YINC, STARTX, ENDX, STARTY, ENDY, NO_FRAMES);
   
   The above line is the constructor to create an animation object named Animation1. All of the arguments are integers and they   describe the animations size and location.
   
@@ -28,42 +28,43 @@ Then navigate to "L33T_Animation.zip" (it's in the Library folder) select it and
 
 ## Methods
 
-  void chkAnimation(boolean toMove);
+  ### void chkAnimation(boolean toMove);
   
   This method will be called each loop iteration and will allow the animation to be animated. It will increment the frame and move the animation. The argument toMove tells the methid is it should move the animation. If it's set to true the animation will move in accordance with the constructor arguments. If it's set to false the animation will not move.
   
-  boolean to increment();
+  ### boolean to increment();
   
   This is used internally inside the class however you can access it. It will return false if the FRAME_DELAY has not been exceeded of true if the FRAME_DELAY has been exceeded.
   
-int getXpos();
+### int getXpos();
 
-int getYpos();
+### int getYpos();
 
-void setXpos();
+### void setXpos();
 
-void setYpos();
+### void setYpos();
 
-int getCurrentFrame();
+### int getCurrentFrame();
 
-int getWidth();
+### int getWidth();
 
-int getHeight();
+### int getHeight();
 
-boolean isComplete();
+### boolean isComplete();
 
 Returns true if all of the frames in the animation has been played, otherwise false is returned
 
-boolean toReset();
+### boolean toReset();
 
 returns true if the ENDX and ENDY coordinates have been exceeded. Allows you to decide if the animations needs to be reset.
 
-void moveX(int pixels);
-void moveY(int pixels);
+### void moveX(int pixels);
 
-boolean getBarEndX();
+### void moveY(int pixels);
 
-boolean getBarEndY();
+### boolean getBarEndX();
 
-oid resetAni();
+### boolean getBarEndY();
+
+### void resetAni();
 
