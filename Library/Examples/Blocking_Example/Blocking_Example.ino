@@ -3,7 +3,7 @@
  * Make sure that your microcontroller has more than 10KB of RAM otherwise
  * this code will not work. In tutorial 8 we will store the spirtes in PROGMEM freeing up RAM.
  * 
- * The bird animation will play once and the dragon animation will loop both animations will block the micro controller
+ * The bird animation will play and the dragon animation will play both animations will block the micro controller and loop forever
  * 
  * L33T_Animation Class Example
  * 
