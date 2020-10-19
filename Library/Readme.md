@@ -34,7 +34,7 @@ Then navigate to "L33T_Animation.zip" (it's in the Library folder) select it and
   
   ### boolean to increment();
   
-  This is used internally inside the class however you can access it. It will return false if the FRAME_DELAY has not been exceeded of true if the FRAME_DELAY has been exceeded.
+  This is used internally inside the class however you can access it. It will return False if the FRAME_DELAY has not been exceeded or True if the FRAME_DELAY has been exceeded.
   
 ### int getXpos();
 
@@ -66,11 +66,11 @@ Returns the height of the animation
 
 ### boolean isComplete();
 
-Returns true if all of the frames in the animation has been played, otherwise false is returned
+Returns True if all of the frames in the animation has been played, otherwise False is returned
 
 ### boolean toReset();
 
-returns true if the ENDX and ENDY coordinates have been exceeded. Allows you to decide if the animations needs to be reset.
+returns True if the ENDX and ENDY coordinates have been exceeded. Allows you to decide if the animations needs to be reset.
 
 ### void moveX(int pixels);
 
