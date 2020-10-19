@@ -13,7 +13,7 @@ Then navigate to "L33T_Animation.zip" (it's in the Library folder) select it and
 
 ## Constructor
 
-  ### L33T_Animation Animation1(WIDTH, HEIGHT, FRAME_DELAY, XINC, YINC, STARTX, ENDX, STARTY, ENDY, NO_FRAMES);
+  #### L33T_Animation Animation1(WIDTH, HEIGHT, FRAME_DELAY, XINC, YINC, STARTX, ENDX, STARTY, ENDY, NO_FRAMES);
   
   The above line is the constructor to create an animation object named Animation1. All of the arguments are integers and they   describe the animations size and location.
   
