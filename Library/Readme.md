@@ -9,7 +9,7 @@ Then navigate to "L33T_Animation.zip" (it's in the Library folder) select it and
 
 # Libraray Reference
 
-Constructor
+## Constructor
 
   L33T_Animation Animation1(WIDTH, HEIGHT, FRAME_DELAY, XINC, YINC, STARTX, ENDX, STARTY, ENDY, NO_FRAMES);
   
@@ -26,7 +26,7 @@ Constructor
   ENDY = End position for the Y axis \
   NO_FRAMES = Number of frames in the animation
 
-Methods
+## Methods
 
   void chkAnimation(boolean toMove);
   
