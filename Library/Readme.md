@@ -17,7 +17,7 @@ Then navigate to "L33T_Animation.zip" (it's in the Library folder) select it and
   
   The above line is the constructor to create an animation object named Animation1. All of the arguments are integers and they   describe the animations size and location.
   
-  __WIDTH = Width if the animaiton in pixels \
+  __WIDTH__ = Width if the animaiton in pixels \
   HEIGHT__ = Height if the animaiton in pixels \
   __FRAME_DELAY__ = Time in mS between each frame \
   __XINC__ = How many pixels to increment the X axis per iteration \
