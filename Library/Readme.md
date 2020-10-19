@@ -1,5 +1,7 @@
 # Simple Animation Library Version 1.0.0
 
+REFERENCE: https://github.com/L33t-dot-UK/U8g2_Tutorials/tree/master/Library
+
 # Installation
 
 To install the library download this repo, open Arduino IDE;
