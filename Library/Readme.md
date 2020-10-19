@@ -15,16 +15,16 @@ Then navigate to "L33T_Animation.zip" (it's in the Library folder) select it and
   
   The above line is the constructor to create an animation object named Animation1. All of the arguments are integers and they   describe the animations size and location.
   
-  WIDTH = Width if the animaiton in pixels \
-  HEIGHT = Height if the animaiton in pixels \
-  FRAME_DELAY = Time in mS between each frame \
-  XINC = How many pixels to increment the X axis per iteration \
-  YINC = How many pixels to increment the Y axis per iteration \
-  STARTX = Start position for the X axis \
-  ENDX = End position for the x axis \
-  STARTY = Start psoition for the Y axis \
-  ENDY = End position for the Y axis \
-  NO_FRAMES = Number of frames in the animation
+  __WIDTH = Width if the animaiton in pixels \
+  HEIGHT__ = Height if the animaiton in pixels \
+  __FRAME_DELAY__ = Time in mS between each frame \
+  __XINC__ = How many pixels to increment the X axis per iteration \
+  __YINC__ = How many pixels to increment the Y axis per iteration \
+  __STARTX__ = Start position for the X axis \
+  __ENDX__ = End position for the x axis \
+  __STARTY__ = Start psoition for the Y axis \
+  __ENDY__ = End position for the Y axis \
+  __NO_FRAMES__ = Number of frames in the animation
 
 ## Methods
 
@@ -34,7 +34,7 @@ Then navigate to "L33T_Animation.zip" (it's in the Library folder) select it and
   
   ### boolean to increment();
   
-  This is used internally inside the class however you can access it. It will return False if the FRAME_DELAY has not been exceeded or True if the FRAME_DELAY has been exceeded.
+  This is used internally inside the class however you can access it. It will return False if the __FRAME_DELAY__ has not been exceeded or True if the __FRAME_DELAY__ has been exceeded.
   
 ### int getXpos();
 
@@ -54,7 +54,7 @@ Sets the Y coordinate of the animation
 
 ### int getCurrentFrame();
 
-Returns the current frame in the animation from 0 to (NO_FRAMES - 1)
+Returns the current frame in the animation from 0 to (__NO_FRAMES__ - 1)
 
 ### int getWidth();
 
@@ -70,7 +70,7 @@ Returns True if all of the frames in the animation has been played, otherwise Fa
 
 ### boolean toReset();
 
-returns True if the ENDX and ENDY coordinates have been exceeded. Allows you to decide if the animations needs to be reset.
+returns True if the __ENDX__ and __ENDY__ coordinates have been exceeded. Allows you to decide if the animations needs to be reset.
 
 ### void moveX(int pixels);
 
@@ -82,11 +82,11 @@ Allows you to move the animaiton in the Y axis by a number of pixels. Negative n
 
 ### boolean getBarEndX();
 
-Returns False if the animations has exceeded ENDX
+Returns False if the animations has exceeded __ENDX__
 
 ### boolean getBarEndY();
 
-Returns False if the animation has exceeded ENDY
+Returns False if the animation has exceeded __ENDY__
 
 ### void resetAni();
 
