@@ -12,7 +12,7 @@ The code in this repo is designed to support tutorials found in the above refere
 Videos in this Series;
 1. Introduction
 2. Connecting an OLED Screen to a Arduino
-3. Creating XBM images for use in Arduino IDE ___Strong (Icon Folder)
+3. Creating XBM images for use in Arduino IDE ___Strong (Icon Folder)__
 4. Creating Animation's with U8G2 and Arduino IDE (Blocking_Animation Folder)
 5. Creating an Animation Class (NonBlocking_Class Folder)
 6. Turning the Class into a library (PL_Library Folder)
