@@ -1,6 +1,6 @@
 # U8G2 ANIMATION TUTORIALS
 
-### If you just want an animation library to draw animations on screen then goto the Library folder and install the completed version of this library. I have included some examples to make it easier for you to get started and the Library Reference is included in the Readme.md in the Library folder
+### If you just want an animation library to draw animations on screen then goto the Library folder and install the completed version of this library. I have included some examples to make it easier for you to get started and the Library Reference is included in the Readme.md of the Library folder
 
 REFERENCE: www.L33T.uk/U8G2 \
 REFERENCE: https://www.youtube.com/watch?v=hP_Iinhm-J8&list=PLO2D4fDkIZCVG0tF_QvZqrIN6djy4-Z6i
