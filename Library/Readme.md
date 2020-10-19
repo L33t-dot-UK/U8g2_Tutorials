@@ -30,7 +30,7 @@ Then navigate to "L33T_Animation.zip" (it's in the Library folder) select it and
 
   ### void chkAnimation(boolean toMove);
   
-  This method will be called each loop iteration and will allow the animation to be animated. It will increment the frame and move the animation. The argument toMove tells the methid is it should move the animation. If it's set to true the animation will move in accordance with the constructor arguments. If it's set to false the animation will not move.
+  This method will be called each loop iteration and will allow the animation to be animated. It will increment the frame and move the animation. The argument toMove tells the method is it should move the animation. If it's set to true the animation will move in accordance with the constructor arguments. If it's set to false the animation will not move.
   
   ### boolean to increment();
   
@@ -38,17 +38,31 @@ Then navigate to "L33T_Animation.zip" (it's in the Library folder) select it and
   
 ### int getXpos();
 
+Returns the X coordinate of the animation
+
 ### int getYpos();
+
+Returns the Y coordinate of the animation
 
 ### void setXpos();
 
+Sets the X coordinate of the animation
+
 ### void setYpos();
+
+Sets the Y coordinate of the animation
 
 ### int getCurrentFrame();
 
+Returns the current frame in the animation from 0 to (NO_FRAMES - 1)
+
 ### int getWidth();
 
+Returns the width of the animaiton
+
 ### int getHeight();
+
+Returns the height of the animation
 
 ### boolean isComplete();
 
@@ -60,11 +74,20 @@ returns true if the ENDX and ENDY coordinates have been exceeded. Allows you to 
 
 ### void moveX(int pixels);
 
+Allows you to move the animaiton in the X axis by a number of pixels. Negative numbers will move the animation left
+
 ### void moveY(int pixels);
+
+Allows you to move the animaiton in the Y axis by a number of pixels. Negative numbers will move the animation up
 
 ### boolean getBarEndX();
 
+Returns False if the animations has exceeded ENDX
+
 ### boolean getBarEndY();
+
+Returns False if the animation has exceeded ENDY
 
 ### void resetAni();
 
+Resets the animation to the original constructor arguments
