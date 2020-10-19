@@ -432,8 +432,8 @@ void loop() {
    auxScreen.drawXBM(DRAGON.getXpos(), DRAGON.getYpos(), DRAGON.getWidth(), DRAGON.getHeight(), icon2[DRAGON.getCurrentFrame()]); 
    auxScreen.sendBuffer();
 
-    //The toReset methid will retun true if the animaiton has surpassed the end X and end Y coords
-    //If we didn't have this the animation would play once.
+    //The toReset method will retun true if the animaiton has surpassed the end X and end Y coords
+    //If we didn't have this the animation would play once and not loop.
    if (BIRD.toReset())
    {
         BIRD.resetAni();
