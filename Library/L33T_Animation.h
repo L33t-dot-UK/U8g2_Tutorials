@@ -11,10 +11,10 @@ class L33T_Animation
         int getCurrentFrame();
         int getWidth();
         int getHeight();
-	    boolean isComplete();
+	boolean isComplete();
         boolean toReset();
-	    void moveX(int pixels);
-	    void moveY(int pixels);
+	void moveX(int pixels);
+	void moveY(int pixels);
         boolean getBarEndX();
         boolean getBarEndY();
         void resetAni();
