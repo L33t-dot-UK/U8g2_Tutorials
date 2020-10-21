@@ -7,7 +7,7 @@ REFERENCE: https://www.youtube.com/watch?v=hP_Iinhm-J8&list=PLO2D4fDkIZCVG0tF_Qv
 
 ![Alt text](/Thumb1.png?raw=true "U8G2 Animation Tutorial")
 
-The code in this repo is designed to support tutorials found in the above references.
+The code in this repo is designed to support tutorials found in the below references.
 
 Videos in this Series;
 1. Introduction
