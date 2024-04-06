@@ -16,6 +16,8 @@ Then navigate to "L33T_Animation.zip" (it's in the Library folder) select it and
   #### L33T_Animation Animation1(WIDTH, HEIGHT, FRAME_DELAY, XINC, YINC, STARTX, ENDX, STARTY, ENDY, NO_FRAMES);
   
   The above line is the constructor to create an animation object named Animation1. All of the arguments are integers and they   describe the animations size and location.
+
+  This library is designed to be used with the U8G2 library. The animation library will keep track of the frames and position of animations in a non-blocking way. Drawing of the images is still done by the U8G2 object.
   
   __WIDTH__ = Width if the animaiton in pixels \
   __HEIGHT__ = Height if the animaiton in pixels \
