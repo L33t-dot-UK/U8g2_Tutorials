@@ -1,7 +1,7 @@
 /*
- * This example uses 3 sprites that take up 3952 bytes of dynamic memory
- * Make sure that your microcontroller has more than 10KB of RAM otherwise
- * this code will not work.
+ * This example uses 3 sprites that take up 3952 bytes of memory.
+ * These are all stored in PROGMEM freeing up RAM.
+ * Once stored in PROGMEM the x.drawXBM() is replaced with x.drawXBMP()
  * 
  *The bird will apear to run then jump then run again this will be blocking. It is an example of interaction with
  *jump button. The running sequence would be non blocking and when a button press is detected the blocking jump function 
@@ -474,4 +474,5 @@ void loop() {
    BIRD_R.resetAni();
 
 }
+
 
