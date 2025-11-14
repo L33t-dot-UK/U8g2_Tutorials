@@ -416,7 +416,7 @@ void setup() {
 void loop() {
     // put your main code here, to run repeatedly: 
     auxScreen.clearBuffer();
-    DRAGON.chkAnimation(false); //true == move animation
+    DRAGON.chkAnimation(false); //true == move animation using coords in the constructor
 
     if(DRAGON.isComplete())
     {
@@ -424,7 +424,7 @@ void loop() {
     }
    
     
-    auxScreen.drawXBM(DRAGON.getXpos(), DRAGON.getYpos(), DRAGON.getWidth(), DRAGON.getHeight(), icon2[DRAGON.getCurrentFrame()]);
+    auxScreen.drawXBMP(DRAGON.getXpos(), DRAGON.getYpos(), DRAGON.getWidth(), DRAGON.getHeight(), icon2[DRAGON.getCurrentFrame()]);
     auxScreen.sendBuffer();
 
     if(DRAGON.getXpos()> 124)
@@ -433,3 +433,4 @@ void loop() {
     }
 
 }
+
