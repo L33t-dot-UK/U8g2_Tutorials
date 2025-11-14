@@ -3,7 +3,7 @@
  * Make sure that your microcontroller has more than 10KB of RAM otherwise
  * this code will not work. In tutorial 8 we will store the spirtes in PROGMEM freeing up RAM.
  * 
- * In this example the bird will move 1 pixel per loop iteration and it will restart when the bird gets to X == 60, this can be used to control the bird independent from the animation class rather than having
+ * In this example the bird will move 1 pixel per loop iteration (After frame delay has been accounted for) and it will restart when the bird gets to X == 60, this can be used to control the bird independent from the animation class rather than having
  * rigid movement
  * 
  * L33T_Animation Class Example
@@ -421,9 +421,9 @@ void loop() {
     auxScreen.clearBuffer();
     DRAGON.chkAnimation(false); //true == move animation
     
-    DRAGON.moveX(1); //Move the dragon 1 pixel in the X axis per loop iteration
+    DRAGON.moveX(1); //Move the dragon 1 pixel in the X axis per loop iteration + frame delay
     
-    auxScreen.drawXBM(DRAGON.getXpos(), DRAGON.getYpos(), DRAGON.getWidth(), DRAGON.getHeight(), icon2[DRAGON.getCurrentFrame()]);
+    auxScreen.drawXBMP(DRAGON.getXpos(), DRAGON.getYpos(), DRAGON.getWidth(), DRAGON.getHeight(), icon2[DRAGON.getCurrentFrame()]);
     auxScreen.sendBuffer();
 
     if(DRAGON.getXpos() == 60)
@@ -431,3 +431,4 @@ void loop() {
         DRAGON.setXpos(0);
     }
 }
+
