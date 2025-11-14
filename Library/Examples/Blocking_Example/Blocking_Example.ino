@@ -426,7 +426,7 @@ void loop() {
    {
         auxScreen.clearBuffer();
         BIRD.chkAnimation(true); //true == move animation
-        auxScreen.drawXBM(BIRD.getXpos(), BIRD.getYpos(), BIRD.getWidth(), BIRD.getHeight(), icon[BIRD.getCurrentFrame()]);
+        auxScreen.drawXBMP(BIRD.getXpos(), BIRD.getYpos(), BIRD.getWidth(), BIRD.getHeight(), icon[BIRD.getCurrentFrame()]);
         auxScreen.sendBuffer();
    }
    BIRD.resetAni(); //This will check the BIRD animaiton object and set barEndX and barEndY to true, if this wasn't here then the animation would only play once
@@ -435,8 +435,9 @@ void loop() {
    {
         auxScreen.clearBuffer();
         DRAGON.chkAnimation(true); //true == move animation
-        auxScreen.drawXBM(DRAGON.getXpos(), DRAGON.getYpos(), DRAGON.getWidth(), DRAGON.getHeight(), icon2[DRAGON.getCurrentFrame()]);
+        auxScreen.drawXBMP(DRAGON.getXpos(), DRAGON.getYpos(), DRAGON.getWidth(), DRAGON.getHeight(), icon2[DRAGON.getCurrentFrame()]);
         auxScreen.sendBuffer();
    }
-   DRAGON.resetAni(); //This will make the dragin animation loop by setting the barEndX and barEndY values to true
+   DRAGON.resetAni(); //This will make the dragOn animation loop by setting the barEndX and barEndY values to true
 }
+
