@@ -427,14 +427,14 @@ void loop() {
    {
         auxScreen.clearBuffer();
         BIRD.chkAnimation(true); //true == move animation
-        auxScreen.drawXBM(BIRD.getXpos(), BIRD.getYpos(), BIRD.getWidth(), BIRD.getHeight(), icon[BIRD.getCurrentFrame()]);
+        auxScreen.drawXBMP(BIRD.getXpos(), BIRD.getYpos(), BIRD.getWidth(), BIRD.getHeight(), icon[BIRD.getCurrentFrame()]);
         auxScreen.sendBuffer();
    }
   
 
     auxScreen.clearBuffer();
     DRAGON.chkAnimation(true); //true == move animation
-    auxScreen.drawXBM(DRAGON.getXpos(), DRAGON.getYpos(), DRAGON.getWidth(), DRAGON.getHeight(), icon2[DRAGON.getCurrentFrame()]);
+    auxScreen.drawXBMP(DRAGON.getXpos(), DRAGON.getYpos(), DRAGON.getWidth(), DRAGON.getHeight(), icon2[DRAGON.getCurrentFrame()]);
     auxScreen.sendBuffer();
 
     if(DRAGON.toReset())
@@ -444,3 +444,4 @@ void loop() {
     }
 
 }
+
