@@ -1,7 +1,7 @@
 /*
- * This example uses 3 sprites that take up 3952 bytes of dynamic memory
- * Make sure that your microcontroller has more than 10KB of RAM otherwise
- * this code will not work. In tutorial 8 we will store the spirtes in PROGMEM freeing up RAM.
+ * This example uses 3 sprites that take up 3952 bytes of memory.
+ * These are all stored in PROGMEM freeing up RAM.
+ * Once stored in PROGMEM the x.drawXBM() is replaced with x.drawXBMP()
  * 
  * L33T_Animation Class Example
  * 
@@ -23,7 +23,7 @@ const int sizeBytes = 376; //Number of bytes per frame
 const int frames = 4; //Number of frames
 const int icHeight = 47;
 const int icWidth = 64;
-static unsigned char icon[frames][sizeBytes] = {
+static const unsigned char icon[frames][sizeBytes] PROGMEM = {
    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xf0,
@@ -165,7 +165,7 @@ const int frames_IC2 = 7; //Number of frames
 const int icHeight_IC2 = 46;
 const int icWidth_IC2 = 47;
 
-static unsigned char icon2[frames_IC2][sizeBytes_IC2] = {
+static const unsigned char icon2[frames_IC2][sizeBytes_IC2] PROGMEM = {
    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
    0x00, 0xc0, 0x40, 0x00, 0x00, 0x00, 0x00, 0x80, 0x83, 0x01, 0x00, 0x00,
@@ -338,7 +338,7 @@ static unsigned char icon2[frames_IC2][sizeBytes_IC2] = {
 
 const int groundWidth =  128;
 const int groundHeight = 33;
-static unsigned char ground[][552] = {
+static const unsigned char ground[][552] PROGMEM = {
    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -427,9 +427,9 @@ void loop() {
     auxScreen.clearBuffer(); 
    
    //As you can see the animation class tracks the sprites location and which frame to show next
-   auxScreen.drawXBM(GROUND.getXpos(), GROUND.getYpos(), GROUND.getWidth(), GROUND.getHeight(), ground[0]); 
-   auxScreen.drawXBM(BIRD.getXpos(), BIRD.getYpos(), BIRD.getWidth(), BIRD.getHeight(), icon[BIRD.getCurrentFrame()]); 
-   auxScreen.drawXBM(DRAGON.getXpos(), DRAGON.getYpos(), DRAGON.getWidth(), DRAGON.getHeight(), icon2[DRAGON.getCurrentFrame()]); 
+   auxScreen.drawXBMP(GROUND.getXpos(), GROUND.getYpos(), GROUND.getWidth(), GROUND.getHeight(), ground[0]); 
+   auxScreen.drawXBMP(BIRD.getXpos(), BIRD.getYpos(), BIRD.getWidth(), BIRD.getHeight(), icon[BIRD.getCurrentFrame()]); 
+   auxScreen.drawXBMP(DRAGON.getXpos(), DRAGON.getYpos(), DRAGON.getWidth(), DRAGON.getHeight(), icon2[DRAGON.getCurrentFrame()]); 
    auxScreen.sendBuffer();
 
     //The toReset method will retun true if the animaiton has surpassed the end X and end Y coords
@@ -443,3 +443,4 @@ void loop() {
         DRAGON.resetAni();
    }
 }
+
