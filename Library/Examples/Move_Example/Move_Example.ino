@@ -1,7 +1,7 @@
 /*
- * This example uses 3 sprites that take up 3952 bytes of dynamic memory
- * Make sure that your microcontroller has more than 10KB of RAM otherwise
- * this code will not work. In tutorial 8 we will store the spirtes in PROGMEM freeing up RAM.
+ * This example uses 3 sprites that take up 3952 bytes of memory.
+ * These are all stored in PROGMEM freeing up RAM.
+ * Once stored in PROGMEM the x.drawXBM() is replaced with x.drawXBMP()
  * 
  * In this example the bird will move 1 pixel per loop iteration (After frame delay has been accounted for) and it will restart when the bird gets to X == 60, this can be used to control the bird independent from the animation class rather than having
  * rigid movement
@@ -431,4 +431,5 @@ void loop() {
         DRAGON.setXpos(0);
     }
 }
+
 
