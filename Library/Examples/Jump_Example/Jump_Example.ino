@@ -4,7 +4,7 @@
  * this code will not work.
  * 
  *The bird will apear to run then jump then run again this will be blocking. It is an example of interaction with
- *jump button. The running sequence would be non blocking and when a button press is detected the blocking jump funciton 
+ *jump button. The running sequence would be non blocking and when a button press is detected the blocking jump function 
  *could be used i.e. BIRD_J and BIRD_JD.
  * 
  * L33T_Animation Class Example
@@ -406,10 +406,10 @@ IF THE ANIMATION IS TO STAY STILL X AND Y START AND END POSITIONS SHOULD BE THE 
 The Animation class allows us to create new animations with ease and to draw these animations in a non blocking way
 */
 //                   ICON WIDTH    ICON HEIGHT    FRAME_DELAY Ms     XINCREMENT   YINCREMENT   XSTART  XEND   YSTART   YEND       FRAMES
-L33T_Animation BIRD(icWidth,        icHeight,            200,            2,             1,        -62,    34,   16,      16,       frames);
-L33T_Animation BIRD_J(icWidth,        icHeight,            200,            2,             4,        34,    46,   16,      -8,       frames);
-L33T_Animation BIRD_JD(icWidth,        icHeight,            200,            2,             4,        46,    58,   -8,      16,       frames);
-L33T_Animation BIRD_R(icWidth,        icHeight,            200,            2,             1,        58,    164,   16,      16,       frames);
+L33T_Animation BIRD(icWidth,        icHeight,            200,            2,             1,       -62,    34,   16,      16,       frames);
+L33T_Animation BIRD_J(icWidth,      icHeight,            200,            2,             4,        34,    46,   16,      -8,       frames);
+L33T_Animation BIRD_JD(icWidth,     icHeight,            200,            2,             4,        46,    58,   -8,      16,       frames);
+L33T_Animation BIRD_R(icWidth,      icHeight,            200,            2,             1,        58,    164,  16,      16,       frames);
 
 L33T_Animation GROUND(groundWidth, groundHeight,         150,            6,             6,         0,     0,      45,      45,      1);
 
@@ -433,8 +433,8 @@ void loop() {
     {
         auxScreen.clearBuffer();
         BIRD.chkAnimation(true); //true == move animation
-        auxScreen.drawXBM(BIRD.getXpos(), BIRD.getYpos(), BIRD.getWidth(), BIRD.getHeight(), icon[BIRD.getCurrentFrame()]);
-        auxScreen.drawXBM(GROUND.getXpos(), GROUND.getYpos(), GROUND.getWidth(), GROUND.getHeight(), ground[0]);
+        auxScreen.drawXBMP(BIRD.getXpos(), BIRD.getYpos(), BIRD.getWidth(), BIRD.getHeight(), icon[BIRD.getCurrentFrame()]);
+        auxScreen.drawXBMP(GROUND.getXpos(), GROUND.getYpos(), GROUND.getWidth(), GROUND.getHeight(), ground[0]);
         auxScreen.sendBuffer();
     }
 
@@ -444,8 +444,8 @@ void loop() {
    {
         auxScreen.clearBuffer();
         BIRD_J.chkAnimation(true); //true == move animation
-        auxScreen.drawXBM(BIRD_J.getXpos(), BIRD_J.getYpos(), BIRD_J.getWidth(), BIRD_J.getHeight(), icon[3]);
-        auxScreen.drawXBM(GROUND.getXpos(), GROUND.getYpos(), GROUND.getWidth(), GROUND.getHeight(), ground[0]);
+        auxScreen.drawXBMP(BIRD_J.getXpos(), BIRD_J.getYpos(), BIRD_J.getWidth(), BIRD_J.getHeight(), icon[3]);
+        auxScreen.drawXBMP(GROUND.getXpos(), GROUND.getYpos(), GROUND.getWidth(), GROUND.getHeight(), ground[0]);
         auxScreen.sendBuffer();
    }
 
@@ -455,8 +455,8 @@ void loop() {
    {
         auxScreen.clearBuffer();
         BIRD_JD.chkAnimation(true); //true == move animation
-        auxScreen.drawXBM(BIRD_JD.getXpos(), BIRD_JD.getYpos(), BIRD_JD.getWidth(), BIRD_JD.getHeight(), icon[3]);
-        auxScreen.drawXBM(GROUND.getXpos(), GROUND.getYpos(), GROUND.getWidth(), GROUND.getHeight(), ground[0]);
+        auxScreen.drawXBMP(BIRD_JD.getXpos(), BIRD_JD.getYpos(), BIRD_JD.getWidth(), BIRD_JD.getHeight(), icon[3]);
+        auxScreen.drawXBMP(GROUND.getXpos(), GROUND.getYpos(), GROUND.getWidth(), GROUND.getHeight(), ground[0]);
         auxScreen.sendBuffer();
    }
 
@@ -466,11 +466,12 @@ void loop() {
    {
         auxScreen.clearBuffer();
         BIRD_R.chkAnimation(true); //true == move animation
-        auxScreen.drawXBM(BIRD_R.getXpos(), BIRD_R.getYpos(), BIRD_R.getWidth(), BIRD_R.getHeight(), icon[BIRD_R.getCurrentFrame()]);
-        auxScreen.drawXBM(GROUND.getXpos(), GROUND.getYpos(), GROUND.getWidth(), GROUND.getHeight(), ground[0]);
+        auxScreen.drawXBMP(BIRD_R.getXpos(), BIRD_R.getYpos(), BIRD_R.getWidth(), BIRD_R.getHeight(), icon[BIRD_R.getCurrentFrame()]);
+        auxScreen.drawXBMP(GROUND.getXpos(), GROUND.getYpos(), GROUND.getWidth(), GROUND.getHeight(), ground[0]);
         auxScreen.sendBuffer();
    }
 
    BIRD_R.resetAni();
 
 }
+
