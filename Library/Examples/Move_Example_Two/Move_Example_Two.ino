@@ -1,7 +1,7 @@
 /*
- * This example uses 3 sprites that take up 3952 bytes of dynamic memory
- * Make sure that your microcontroller has more than 10KB of RAM otherwise
- * this code will not work. In tutorial 8 we will store the spirtes in PROGMEM freeing up RAM.
+ * This example uses 3 sprites that take up 3952 bytes of memory.
+ * These are all stored in PROGMEM freeing up RAM.
+ * Once stored in PROGMEM the x.drawXBM() is replaced with x.drawXBMP()
  * 
  * 
  * L33T_Animation Class Example
@@ -433,4 +433,5 @@ void loop() {
     }
 
 }
+
 
