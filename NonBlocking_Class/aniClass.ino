@@ -28,7 +28,7 @@ class animation
         int width_;
         int height_;
 
-        int timerStart;
+        unsigned long timerStart;
         boolean moveAni();
 };
 
