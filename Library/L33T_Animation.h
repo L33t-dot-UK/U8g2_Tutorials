@@ -37,8 +37,9 @@ class L33T_Animation
         int width_;
         int height_;
 
-        int timerStart;
+        unsigned long timerStart;
         boolean moveAni();
 
         boolean aniCompleted;
 };
+
